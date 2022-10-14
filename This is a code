@@ -7,26 +7,26 @@ private:
     int x = 5;
 public:
     void Print() {
-        cout << " Я загодал число от 1 до 10. Вам предстоит его угадать. " << endl;
-        cout << "Я буду вам давать подсказки" << endl;
+        cout << " I guessed a number from 1 to 10. You have to guess it. " << endl;
+        cout << "I will give you hints" << endl;
     }
     void gameGuess() {
         for (bool i = false; i < true;)
         {
-            cout << " Введите целочисленое число в диапазоне от 1 до 10 - ";
+            cout << " Enter an integer number between 1 and 10 - ";
             cin >> x;
             cout << endl;
             if (x==5)
             {
-                cout << " ПОздравляю ";
+                cout << " Congratulations ";
                 break;
             }
             if(x<5)
             {
-                cout << " Вы ввели меньше чем загадано" << endl;
+                cout << " You entered less than expected" << endl;
             }
             else {
-                cout << "Вы ввели больше чем загадано";
+                cout << "You entered more than expected";
             }
         }
     }
@@ -35,8 +35,6 @@ public:
 
 int main()
 { 
-   
-    setlocale(LC_ALL, "Rusian");
     Point a;
     a.Print();
     a.gameGuess();
